@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div><a href="/">enter</a> | <a href="/logs">list</a></div>
+    <p>
+      latitude: <span id="latitude"></span>&deg;<br />
+      longitude: <span id="longitude"></span>&deg;
+    </p>
+
+    <form id="submit">
+    <label>Manhole Number</label>
+    <input type="text" class="form-control"  id="manhole number" name="Manhole Number" required>
+    
+    <br>
+    <label>Materials Acquired-</label>
+    <br>
+    <label>Number of Pipes acquired</label>
+    <input type="number" class="form-control"  id="pipes acquired" name="Pipes Acquired" required>
+    <img id="pipephotoim"src="" alt="">
+    <button id="pipephoto">photo</button>
+    <label>Number of Bricks acquired</label>
+    <input type="number" class="form-control"  id="bricks acquired" name="Bricks Acquired" required>
+    <img id="bricksphotoim"src="" alt="">
+    <button id="bricksphoto">photo</button>
+    <label>Number of Cement Bags acquired</label>
+    <input type="number" class="form-control" id="cement acquired" name="Cement Bags Acquired" required>
+    <img id="cementphotoim"src="" alt="">
+    <button id="cementphoto">photo</button>
+    <br>
+    <label for="Manhole_Type">Manhole Type</label>
+      <select id="Manhole_Type">
+        <option value="Brick Manhole">Brick Manhole</option>
+        <option value="RCC Manhole">RCC Manhole</option>
+        <option value="Pre-Cast Manhole">Pre-Cast Manhole</option>
+      </select>
+      <label for="Manhole_Depth">Manhole Depth(m)</label>
+      <input id="Manhole_Depth" type="number">
+      <!-- <input type="radio" id="m" name="measurementmanhole" value="m">
+      <label for="m">m</label>
+      <input type="radio" id="cm" name="measurementmanhole" value="cm">
+      <label for="cm">cm</label><br> -->
+      <label for="Manhole_progress">Stage of progress</label>
+        <select id="Manhole_progress">
+          <option value="Earth work">Earth work</option>
+          <option value="PCC">PCC</option>
+          <option value="Brick work">Brick work</option>
+          <option value="Finishing">Finishing</option>
+          <option value="Channeling">Channeling</option>
+          <option value="Frame and cover">Frame and cover</option>
+          <option value="Refilling">Refilling</option>
+        </select>
+        <img id="manholeprogim"src="" alt="">
+        <button id="manholeprogphoto">photo</button>
+        <br>
+     <label for="line_number">Line Number</label>
+     <input type="text"   id="line_number" name="line_number" required>
+     <label for="Type_of_line"> Type of line</label>
+     <select id="Type_of_line">
+       <option value="TWC">TWC</option>
+       <option value="UPVC">UPVC</option>
+       <option value="Stone ware">Stone ware</option>
+       <option value="RCC">RCC</option>
+       <option value="CI">CI</option>
+     </select>
+     <label for="Length">Length(m)</label>
+     <input type="number"   id="Length" name="Length" required>
+     <label for="Depth">Depth(m)</label>
+     <input type="number"   id="Depth" name="Depth" required>
+     <label for="Line_Progress">Line Progress</label>
+     <select id="Line_Progress">
+      <option value="Earth work">Earth work</option>
+      <option value="Leveling or benching">Leveling or benching</option>
+      <option value="Pipe fitting">Pipe fitting</option>
+      <option value="Pipe encasing">Pipe encasing</option>
+      <option value="Refilling">Refilling</option>
+    </select>
+    <img id="lineprogim"src="" alt="">
+    <button id="lineprogphoto">photo</button>
+    <br>
+    <label>Materials Returned-</label>
+    <br>
+    <label>Number of Pipes Returned</label>
+    <input type="number" class="form-control"  id="pipes returned" name="Pipes returned" required>
+    <img id="pipephotoimre"src="" alt="">
+    <button id="pipephotore">photo</button>
+    <label>Number of Bricks Returned</label>
+    <input type="number" class="form-control"  id="bricks returned" name="Bricks returned" required>
+    <img id="bricksphotoimre"src="" alt="">
+    <button id="bricksphotore">photo</button>
+    <label>Number of Cement Bags Returned</label>
+    <input type="number" class="form-control" id="cement returned" name="Cement Bags returned" required>
+    <img id="cementphotoimre"src="" alt="">
+    <button id="cementphotore">photo</button>
+    <label for="Labour Id">Labour Id</label>
+    <input type="text"   id="Labour Id" name="Labour Id" required>
+    
+
+    <!-- <button id="submit">submit</button> -->
+    <input  type="submit" value="Submit">
+  </form>
+      
+    <br>
+    <br>
+    <br>
+      <script src="sketch.js"></script>
+  </body>
+</html>
